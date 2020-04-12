@@ -42,6 +42,10 @@ nav {
     float: right;
 }
 
+.page-footer {
+    margin-top: 1em;
+}
+
 h1 img {
     width: 100%;
 }
@@ -88,6 +92,54 @@ header h2 {
 
 .dropdown li {
     border: none;
+}
+
+.btn {
+    background-color: teal;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: aqua;
+    color: aliceblue;
+}
+
+.programs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    width:100%;
+}
+
+.card {
+    flex: 1 0 auto;
+    flex-grow:1;
+    flex-shrink:0;
+    flex-basis: auto;
+    width: 20%;
+    margin:6px;
+    border: solid 1px #eee;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 2em;
+}
+
+.card-body {
+    padding: 6px;
+}
+
+.learn {
+    margin-top: 1em;
 }
 
 @media(min-width:768px) {
@@ -137,7 +189,7 @@ header h2 {
         display: none;
     }
 
-    .dropdown:hover ul{
-        display:block;
+    .dropdown:hover ul {
+        display: block;
     }
 }
