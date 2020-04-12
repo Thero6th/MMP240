@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'alegreya sans';
+}
+
+.container {
+    padding: 1em;
+    max-width: 1140px;
+}
+
+.type-image {
+    width: 100%;
+}
+
+h4,
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #ffe082;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #ffffb3;
+}
+
+header {
+    width: 60%;
+    float: left;
+}
+
+nav {
+    width: 30%;
+    float: right;
+}
+
+.page-footer {
+    margin-top: 1em;
+}
+
+h1 img {
+    width: 100%;
+}
+
+header h2 {
+    font-size: 1em;
+}
+
+.main-menu li {
+    padding: 6px;
+    border-bottom: solid 1px #000;
+}
+
+.main-menu ul {
+    list-style-type: none;
+}
+
+.menu-button {
+    text-align: right;
+}
+
+.menubar {
+    width: 202px;
+    background-color: #fff;
+    border: solid 2px #eee;
+    position: absolute;
+    right: 16px;
+}
+
+.search {
+    padding: 6px;
+}
+
+.search button {
+    width: 30%;
+    padding: 6px
+}
+
+.search input {
+    width: 40%;
+    margin: 2px;
+    border: solid 1px #ccc;
+}
+
+.dropdown li {
+    border: none;
+}
+
+.btn {
+    background-color: teal;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: aqua;
+    color: aliceblue;
+}
+
+.programs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    width:100%;
+}
+
+.card {
+    flex: 1 0 auto;
+    flex-grow:1;
+    flex-shrink:0;
+    flex-basis: auto;
+    width: 20%;
+    margin:6px;
+    border: solid 1px #eee;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 2em;
+}
+
+.card-body {
+    padding: 6px;
+}
+
+.learn {
+    margin-top: 1em;
+}
+
+@media(min-width:768px) {
+
+    header {
+        width: 30%;
+    }
+
+    nav {
+        width: 60%;
+        text-align: right;
+        margin-top: 1.8em;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .menubar {
+        position: static;
+        width: auto;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+
+    .main-menu li {
+        display: inline-block;
+        border: none;
+        padding-right: 1em;
+    }
+
+    .dropdown li {
+        display: block;
+        margin-left: 0;
+    }
+
+    .dropdown ul {
+        text-align: center;
+        border: solid 1px #ccc;
+        padding: 6px;
+        background-color: #fff;
+        width: 150px;
+        position: absolute;
+        display: none;
+    }
+
+    .dropdown:hover ul {
+        display: block;
+    }
+}
