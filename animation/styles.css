@@ -142,6 +142,10 @@ header h2 {
     margin-top: 1em;
 }
 
+,page-main{
+    
+}
+
 @media(min-width:768px) {
 
     header {

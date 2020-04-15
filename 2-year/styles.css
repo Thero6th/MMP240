@@ -11,6 +11,9 @@ body {
 .container {
     padding: 1em;
     max-width: 1140px;
+    background-color: #FAE693;
+    position: relative;
+    border: solid 3px #999;
 }
 
 .type-image {
@@ -33,12 +36,13 @@ a:hover {
 }
 
 header {
-    width: 60%;
+    width: 80%;
     float: left;
+    background-color: #fff;
 }
 
 nav {
-    width: 30%;
+    width: 20%;
     float: right;
 }
 
@@ -51,7 +55,7 @@ h1 img {
 }
 
 header h2 {
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .main-menu li {
