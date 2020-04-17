@@ -128,7 +128,6 @@ header h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: aquamarine;
     width: 100%;
 }
 
@@ -139,7 +138,7 @@ header h2 {
     flex-basis: auto;
     width: 20%;
     margin: 6px;
-    border: solid 1px #eee;
+    background-color: ;
     border-radius: 10px;
 }
 
@@ -152,10 +151,18 @@ header h2 {
 
 .card-body {
     padding: 6px;
+    color:#fff;
+    background-color:#5472d3 
+}
+
+.empty {
+    visibility: hidden;
 }
 
 .learn {
     margin-top: 1em;
+    background-color:#ffe082;
+    color:#0d47a1
 }
 
 @media(min-width:768px) {
@@ -170,13 +177,13 @@ header h2 {
 
     header h2 {
         font-size: 25px;
-        background-color: #f2d146;
+        background-color: #5472d3;
         width: 240%;
         text-align: center;
-        padding:5px;
+        padding: 5px;
         color: #fff;
-        border:none;
-        margin:auto;
+        border: none;
+        margin-bottom:1em
     }
 
     nav {
@@ -216,6 +223,7 @@ header h2 {
     .dropdown li {
         display: block;
         margin-left: 0;
+        background-color: #ffe082;
     }
 
     .dropdown ul {
@@ -236,14 +244,14 @@ header h2 {
         text-align: center;
         padding-top: 1.5em;
     }
-    
-    
+
+
 
     a {
         color: #0d47a1;
     }
-    
-    footer{
+
+    footer {
         background-color: #f2d146;
         color: #fff;
         text-align: center;
