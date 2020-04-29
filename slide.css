@@ -1,0 +1,308 @@
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        body {
+            font-family: 'raleway';
+        }
+
+        .container {
+            padding: 1em;
+            max-width: 1140px;
+            background-color: #fff;
+        }
+
+        #slide {
+            width: 100%;
+        }
+
+        .home-slide {
+            max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .slide show {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .slide-back {
+            position: absolute;
+            left: 8px;
+        }
+
+        .slide-next {
+            position: absolute;
+            right: 8px;
+        }
+
+        .type-image {
+            width: 100%;
+        }
+
+        h4,
+        p {
+            margin-bottom: 1em;
+        }
+
+
+        a {
+            color: #ffe082;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            color: #ffffb3;
+        }
+
+        header {
+            width: 60%;
+            float: left;
+            margin: 1em;
+        }
+
+        nav {
+            width: 30%;
+            float: right;
+        }
+
+        .center {
+            width: 100%
+        }
+
+        .page-footer {
+            margin-top: 1em;
+        }
+
+        h1 img {
+            width: 70%;
+        }
+
+        header h2 {
+            font-size: 20px;
+            width: 70%;
+            color: #5472d3;
+            margin-left: 1em;
+        }
+
+        .main-menu li {
+            padding: 6px;
+            border-bottom: solid 1px #000;
+        }
+
+        .main-menu ul {
+            list-style-type: none;
+        }
+
+        .menu-button {
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        .menubar {
+            display: none;
+            width: 202px;
+            background-color: #fff;
+            border: solid 2px #eee;
+            position: absolute;
+            right: 3em;
+        }
+
+        .search {
+            padding: 6px;
+        }
+
+        .search button {
+            width: 100%;
+            padding: 6px
+        }
+
+        .search input {
+            width: 100%;
+            margin: 2px;
+            border: solid 1px #ccc;
+        }
+
+        .dropdown li {
+            border: none;
+        }
+
+        .btn {
+            padding: 8px;
+            display: inline-block;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .btn input {
+            font-size: 1em;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn button {
+            width: 100%
+        }
+
+        .programs {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .card {
+            flex: 1 0 auto;
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: auto;
+            width: 20%;
+            margin: 5px;
+            background-color: #ccc;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-top: 2em;
+        }
+
+        .card-body {
+            padding: 6px;
+            color: #fff;
+            background-color: #5472d3;
+        }
+
+        .empty {
+            visibility: hidden;
+        }
+
+        .learn {
+            margin-top: 1em;
+            background-color: #ffe082;
+            color: #0d47a1
+        }
+
+        @media(min-width:768px) {
+            .container {
+                border: solid 1px #5472d3;
+                margin: 1em;
+            }
+
+            header {
+                width: 30%;
+            }
+
+            header h2 {
+                font-size: 25px;
+                background-color: #5472d3;
+                width: 42em;
+                text-align: center;
+                padding: 5px;
+                color: #fff;
+                border: none;
+                margin-bottom: 1em;
+            }
+
+            nav {
+                width: 60%;
+                text-align: right;
+                margin-top: 1em;
+            }
+
+            .menu-button {
+                display: none;
+            }
+
+
+            .menubar {
+                position: static;
+                width: 100%;
+                border: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                background-color: #f2d146;
+                border-radius: 0.5em;
+            }
+
+            .main-menu li {
+                display: inline-block;
+                border: none;
+                margin-right: 3em;
+            }
+
+            .dropdown {
+                margin: 1em;
+                padding-right: 0.5em;
+            }
+
+            .dropdown ul {
+                display: inline-block;
+                width: 150px;
+                text-align: center;
+                border: solid 1px #ccc;
+                padding: 6px;
+                position: absolute;
+                display: none;
+            }
+
+            .dropdown:hover ul {
+                display: block;
+                background-color: #f2d146;
+            }
+
+            .dropdown a {
+                display: inline-block;
+                width: 100%;
+            }
+
+            dropdown a:hover {
+                background-color: aquamarine;
+            }
+
+            .search {
+                text-align: center;
+                padding-top: 1.5em;
+            }
+
+            .search input {
+                width: 60%;
+                border-radius: 3em;
+                text-align: center;
+                padding: 4px;
+            }
+
+            .search button {
+                width: 30%;
+                border-radius: 1em
+            }
+
+            .btn:hover {
+                background-color: #ccc;
+            }
+
+            a {
+                color: #0d47a1;
+            }
+
+            .programs {
+                margin-left: 10%
+            }
+
+            footer {
+                background-color: #f2d146;
+                color: #fff;
+                text-align: center;
+                font-size: 20px;
+                width: 100%;
+            }
+        }

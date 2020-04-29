@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CUNY Design Home Page</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slide.css">
+    <script type="text/javascript" src="drop.js">
+    </script>
+    <script type="text/javascript" src="slide.js"></script>
 </head>
 
 <body>
@@ -16,8 +19,8 @@
             <h2>Design programs across CUNY</h2>
         </header>
         <nav class="main-menu">
-            <div class="menu-button"><img src="images/menu.svg" width="68" alt=""></div>
-            <div class="menubar">
+            <div class="menu-button"><img src="images/menu.svg" width="68" alt="" onclick="showMenu();"></div>
+            <div class="menubar" id="menu">
                 <ul>
                     <li class="dropdown"><a href="#">Degrees</a>
                         <ul>
@@ -41,11 +44,57 @@
             </div>
         </nav>
         <main class="page-main">
-        <div class="home">
-            <img src="images/homepage.jpg">
-        </div>
+            <div class="home-slide">
+                <div class="slide-show">
+                    <a href="#" class="slide-back" onclick="slideshowBack(); return false;">
+                        <img src="images/left.png" alt="back">
+                    </a>
+                    <!--  Place the first image here  -->
+                    <img src="images/slide-1.jpg" alt="" id="slide">
+                    <a href="#" class="slide-next" onclick="slideshowUp(); return false;">
+                        <img src="images/right.png" alt="next"></a>
+                </div> <!-- #slide -->
+            </div> <!-- #container -->
+            <div class="programs">
+                <div class="card">
+                    <img src="images/bmcc-animation-card.jpg" alt="" id="home-gallery">
+                    <div class="card-body">
+                        <h5 class="card-subtitle">Borough of Manhattan Community College</h5>
+                        <h4 class="card-title">Animation and Motion Graphics</h4>
+                        <h5>A.S.</h5>
+                        <a href="bmcc-animation.html" class="btn learn">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/bmcc-mmd-card.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-subtitle">Borough of Manhattan Community College</h5>
+                        <h4 class="card-title">Multimedia Design</h4>
+                        <h5>A.S.</h5>
+                        <a href="bmcc-mmd.html" class="btn learn">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/bronx-card.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-subtitle">Bronx Community College</h5>
+                        <h4 class="card-title">Digital Arts</h4>
+                        <h5>A.S.</h5>
+                        <a href="bronx-digital.html" class="btn learn">Learn More</a>
+                    </div>
+                </div>
+                <div class="empty card">
+                    <img src="images/bronx-card.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-subtitle">Bronx Community College</h5>
+                        <h4 class="card-title">Digital Arts</h4>
+                        <h5>A.S.</h5>
+                        <a href="bronx-digital.html" class="btn learn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <footer class="page-footer">Learn More &copy; Copyright 2020</footer>
         </main>
-        <footer class="page-footer">Learn More &copy; Copyright 2020</footer>
     </div>
 </body>
 
