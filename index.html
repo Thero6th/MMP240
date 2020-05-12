@@ -3,20 +3,21 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CUNY Design Home Page</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="slide.css">
+    <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="drop.js">
     </script>
     <script type="text/javascript" src="slide.js"></script>
+    <script src="map.js" defer></script>
 </head>
 
 <body>
     <div class="container">
         <header class="page-header">
-            <h1><img src='images/logo.png' alt='logo' class='fluid-image'></h1>
-            <h2>Design programs across CUNY</h2>
+            <h1><a href="index.html"><img src='images/logo.png' alt='logo' class='fluid-image'></a></h1>
         </header>
         <nav class="main-menu">
             <div class="menu-button"><img src="images/menu.svg" width="68" alt="" onclick="showMenu();"></div>
@@ -35,7 +36,7 @@
                             <li><a href="industrial-design.html">Industrial Design</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="#">Apply</a>
+                    <li class="dropdown"><a href="https://www.cuny.edu/">Apply</a>
                 </ul>
                 <form class="search">
                     <input type="text" placeholder="search">
@@ -43,52 +44,36 @@
                 </form>
             </div>
         </nav>
+        <h2 id="title">Design programs across CUNY</h2>
         <main class="page-main">
-            <div class="home-slide">
-                <div class="slide-show">
-                    <a href="#" class="slide-back" onclick="slideshowBack(); return false;">
-                        <img src="images/left.png" alt="back">
-                    </a>
-                    <!--  Place the first image here  -->
-                    <img src="images/slide-1.jpg" alt="" id="slide">
-                    <a href="#" class="slide-next" onclick="slideshowUp(); return false;">
-                        <img src="images/right.png" alt="next"></a>
-                </div> <!-- #slide -->
-            </div> <!-- #container -->
-            <div class="programs">
-                <div class="card">
-                    <img src="images/industrial-design-card.jpeg" alt="" id="home-gallery">
-                    <div class="card-body">
-                        <h3 class="card-subtitle">Industrial Design</h3>
-                        <a href="industrial-design.html" class="btn learn">Learn More</a>
-                    </div>
+            <div class="move">
+                <div class="home-slide" id="move-item1">
+                    <div class="slide-show">
+                        <a href="#" class="slide-back" onclick="slideshowBack(); return false;">
+                            <img src="images/left.png" alt="back">
+                        </a>
+                        <!--  Place the first image here  -->
+                        <img src="images/slide-1.jpg" alt="" id="slide">
+                        <a href="#" class="slide-next" onclick="slideshowUp(); return false;">
+                            <img src="images/right.png" alt="next"></a>
+                    </div> <!-- #home-slide -->
+                </div> <!-- #slide-show -->
+                <div class="one">
+                    <a class="link-box" href="animation.html"><span>Animation</span></a>
                 </div>
-                <div class="card">
-                    <img src="images/animation-card.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Cuny Design</h4>
-                        <h3 class="card-subtitle">Animation</h3>
-                        <a href="animation.html" class="btn learn">Learn More</a>
-                    </div>
+                <div class="two">
+                    <a class="link-box" href="digital-design.html"><span>Digital Design</span></a>
                 </div>
-                <div class="card">
-                    <img src="images/digital-design-card.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-subtitle">Digital Design</h5>
-                        <a href="digital-design.html" class="btn learn">Learn More</a>
-                    </div>
+                <div class="three">
+                    <a class="link-box" href="industrial-design.html"><span>Industrial Design</span></a>
                 </div>
-                <div class="empty card">
-                    <img src="images/bronx-card.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-subtitle">Bronx Community College</h5>
-                        <h4 class="card-title">Digital Arts</h4>
-                        <h5>A.S.</h5>
-                        <a href="bronx-digital.html" class="btn learn">Learn More</a>
-                    </div>
+                <div class="four">
+                    <iframe src="https://snazzymaps.com/embed/237291" width="100%" height="600px" style="border:none;"></iframe>
                 </div>
             </div>
-            <footer class="page-footer">Learn More &copy; Copyright 2020</footer>
         </main>
-    </div>
-</body></html>
+        <footer class="page-footer"><a href="https://www.cuny.edu/admissions/apply-to-cuny/?utm_source=applynav">Learn More &copy; Copyright 2020</a></footer>
+    </div> <!-- #container -->
+</body>
+
+</html>
