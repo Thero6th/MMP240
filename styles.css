@@ -130,7 +130,7 @@
 
         .dropdown li {
             border: none;
-            display:inline-block;
+            display: inline-block;
             padding: 8px;
         }
 
@@ -166,11 +166,19 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            width: 300px;
-            height: 100%;
-            background-image: url(images/animation-card.jpg);
+            width: 100%;
+            height: 300px;
+            background-image: url(images/animation.jpg);
             background-size: cover;
 
+        }
+
+        .two .link-box {
+            background-image: url(images/digital-design.jpg);
+        }
+
+        .three .link-box {
+            background-image: url(images/industrial-design.jpg);
         }
 
         .one,
@@ -225,9 +233,8 @@
             color: #0d47a1
         }
 
-        h4,
-        p {
-            margin-bottom: 1em;
+        main-page h4, p {
+            margin: 1em;
         }
 
         footer {
@@ -304,10 +311,10 @@
             }
 
             .dropdown li a {
-                display:inline-block;
+                display: inline-block;
                 width: 100%;
             }
-            
+
             .dropdown li a:hover {
                 background-color: #ffffb3;
             }

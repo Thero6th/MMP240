@@ -3,7 +3,7 @@ var num = 0;
 //Replace with your own values and add additional lines for more images
 imgArray = [
   ['images/slide-1.jpg'],
-  ['images/slide-2.jpg'],
+  ['images/slide-2.png'],
   ['images/slide-3.jpg'],
   ['images/slide-4.jpg']
 ]
